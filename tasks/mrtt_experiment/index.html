@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Repeated choice</title>
+    <link rel="stylesheet" href="js/jspsych-6.1.0/css/jspsych.css"></link>
+    <link rel='stylesheet' type='text/css' href='default_style.css'>
+  </head>
+
+<body>
+    <script src='js/jquery.min.js'></script>
+    <script src="js/math.min.js"></script>
+    <script src="js/jspsych-6.1.0/jspsych.js"></script>
+    <script src="js/jspsych-6.1.0/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="js/jspsych-6.1.0/plugins/jspsych-html-slider-response.js"></script>
+    <script src="js/jspsych-6.1.0/plugins/jspsych-image-keyboard-response.js"></script>
+    <script src="js/jspsych-6.1.0/plugins/jspsych-survey-multi-choice.js"></script>
+    <script src="backend_interaction.js"></script>
+    <script src='mrtt.js'></script>
+
+  <script>
+  condition='adv';
+
+//   condition='rnd'
+$( document ).ready(function() {
+
+    jsPsych.init({
+        timeline: timeline
+    });
+ });
+
+  </script>
+  </body>
+</html>
